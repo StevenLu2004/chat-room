@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="index.css" type="text/css" />
+        <title>Chat room</title>
+    </head>
+    <body>
+        <div id="chat">
+            <ul>
+                <li v-for="msg in messages">
+                    <span v-if="msg.type == 'message'" class="chat-msg">{{ msg.content }}</span>
+                    <span v-if="msg.type == 'announcement'" class="chat-anc">{{ msg.content }}</span>
+                </li>
+            </ul>
+            <form v-on:submit="send">
+                <input v-model="newMessage">
+            </form>
+        </div>
+        <script src="socket.io"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

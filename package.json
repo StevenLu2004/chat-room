@@ -1,0 +1,25 @@
+{
+  "name": "chat-room",
+  "version": "0.0.1",
+  "description": "Chat room",
+  "main": "./server/index.js",
+  "scripts": {
+    "test": "echo \"Error: just no test command\" && exit 1",
+    "develop": "make && node server/index.js",
+    "start": "make && node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StevenLu2004/chat-room.git"
+  },
+  "author": "Tongyu Lu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StevenLu2004/chat-room/issues"
+  },
+  "homepage": "https://github.com/StevenLu2004/chat-room#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}

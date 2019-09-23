@@ -64,5 +64,5 @@ div#chat form input {
 div#chat form input:focus {
   outline: none;
   background-color: #fff;
-  box-shadow: 0 0 8pt 0 #aaa;
+  box-shadow: 0 0 8pt 0 #ccc;
 }

@@ -16,6 +16,8 @@ window.onload = function() {
             send: function(event) {
                 // No reload
                 event.preventDefault();
+                // Delete trailing whitespace characters
+                this.newMessage = this.newMessage.replace(/[\t\s\n]+$/g, "");
                 // No sending empty messages
                 if (this.newMessage !== "") {
                     // Send back non-empty message with Socket.IO

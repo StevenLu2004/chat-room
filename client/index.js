@@ -25,10 +25,13 @@ window.onload = function() {
                     }));
                     // Clear message input box
                     this.newMessage = "";
+                    // Scroll message input box into view
+                    document.getElementsByTagName('input')[0].scrollIntoView();
                 }
             },
             recv: function(msg) {
                 this.messages.push(msg);
+                document.getElementsByTagName('input')[0].scrollIntoView();
             }
         }
     });

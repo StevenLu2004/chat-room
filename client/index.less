@@ -16,7 +16,9 @@ div#chat {
     max-width: 7.5in;
     max-height: 9in;
     padding: .2in;
-    border: 2pt solid #000;
+    border-radius: .2in;
+    box-shadow: 0 0 .2in 0 #888;
+    background-color: #fff;
     font-family: Arial, sans-serif;
     font-size: 14pt;
     font-weight: 100;
@@ -30,6 +32,7 @@ div#chat {
             padding: .5ch;
             span {
                 display: block;
+                overflow-wrap: break-word;
                 &.chat-anc {
                     color: #c00;
                     font-style: italic;
@@ -49,8 +52,11 @@ div#chat {
             padding: 0;
             font: inherit;
             background-color: #eee;
+            transition: all .3s ease;
             &:focus {
                 outline: none;
+                background-color: #fff;
+                box-shadow: 0 0 8pt 0 #aaa;
             }
         }
     }
